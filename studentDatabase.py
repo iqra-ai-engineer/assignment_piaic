@@ -18,8 +18,8 @@ def manage_student_database():  #created function to manage database of students
         students.append(student)
         student_id += 1
     print("Student list:")
-    for student in students:                  #print student info
-        print(f"ID: {student[0]}, Name: {student[1]}")
+    for student in students: #print student info
+        print(f"ID: {student[0]}, Student Name: {student[1]}")
     print(f"\nTotal number of students: {len(students)}")    # total number of students
     total_name_length = sum(len(student[1]) for student in students)    # total length of students names
     print(f"Total length of all student names combined: {total_name_length}")
