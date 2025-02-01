@@ -1,0 +1,18 @@
+version = 1
+requires-python = ">=3.12"
+
+[manifest]
+members = [
+    "explore-uv",
+    "hello-world",
+]
+
+[[package]]
+name = "explore-uv"
+version = "0.1.0"
+source = { editable = "." }
+
+[[package]]
+name = "hello-world"
+version = "0.1.0"
+source = { virtual = "hello-world" }
